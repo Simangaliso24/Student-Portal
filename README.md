@@ -18,3 +18,13 @@ It also provides an interactive **quiz system.**
 1. Clone this repository:
    ```bash
    git clone https://github.com/YOUR-USERNAME/student-portal.git
+
+## 📸 Screenshots
+
+| Login | Signup | Start Quiz |
+|-------|--------|------------|
+| ![Login](screenshots/login.png) | ![Signup](screenshots/signup.png) | ![Start Quiz](screenshots/startQ.png) |
+
+| Quiz | Subjects | Notes | Final Score |
+|------|---------|-------|------------|
+| ![Quiz](screenshots/quiz.png) | ![Subjects](screenshots/subjects.png) | ![Notes](screenshots/notes.png) | ![Final Score](screenshots/score.png) |
