@@ -1,0 +1,191 @@
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0.5em 0;
+}
+
+/* ===== Header ===== */
+header.hero {
+    text-align: center;
+    padding: 40px 20px;
+    background: #e0f7fa;
+    color: #0077b6;
+    border-bottom: 2px solid #0077b6;
+    border-radius: 0 0 15px 15px;
+}
+
+/* ===== Buttons ===== */
+button {
+    padding: 12px 20px;
+    border-style: ridge;
+    border-color: #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background 0.3s;
+    width: 100%;
+    background: transparent;
+}
+
+button:hover {
+    background: #ccc;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ===== Dashboard ===== */
+body.dashboard-page .subjects {
+    max-width: 1000px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.subject-card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.subject-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    background: #e9f5ff;
+}
+
+.subject-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.logout {
+    margin-top: 20px;
+    background: #d62828;
+    color: white;
+}
+
+.logout:hover {
+    background: #9d0208;
+}
+
+/* ===== Login / Signup ===== */
+body.login-page, body.signup-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    background: url('BckImages/planets.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 420px;
+}
+
+form.login-form, form.signup-form {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    padding: 30px 25px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+form h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #0077b6;
+}
+
+form p{
+    text-align: center;
+}
+
+form input {
+    width: 94%;
+    padding: 12px;
+    margin-bottom: 6px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    background: transparent;
+    color: white;
+}
+
+.iniphuthi, .awuthiphuthi{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.iniphuthi i, .awuthiphuthi i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: black;
+}
+
+/* ===== Quiz ===== */
+body.quiz-page {
+    background: white;
+}
+
+.quiz-content, #scoreContainer {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    background: aliceblue;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.question label {
+    display: block;
+    
+}
+
+#scoreContainer h2, #scoreContainer h3 {
+    text-align: center;
+}
+
+#backBtn {
+    display: block;
+    margin: 20px auto;
+    background: #d62828;
+    color: white;
+}
+
+#backBtn:hover {
+    background: #9d0208;
+}
+

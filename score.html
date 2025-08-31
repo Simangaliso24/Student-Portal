@@ -1,0 +1,82 @@
+<div id="quizFormContainer">
+    <form id="quizForm">
+        <div class="question">
+            <h3>1. What shape is DNA?</h3>
+            <label><input type="radio" name="q1" value="A"> Single helix</label><br>
+            <label><input type="radio" name="q1" value="B"> Double helix</label><br>
+            <label><input type="radio" name="q1" value="C"> Triple helix</label><br>
+            <label><input type="radio" name="q1" value="D"> Linear chain</label>
+        </div>
+        <div class="question">
+            <h3>2. Who are credited with discovering the DNA structure?</h3>
+            <label><input type="radio" name="q2" value="A"> Watson & Crick</label><br>
+            <label><input type="radio" name="q2" value="B"> Mendel & Darwin</label><br>
+            <label><input type="radio" name="q2" value="C"> Franklin & Wilkins</label><br>
+            <label><input type="radio" name="q2" value="D"> Pasteur & Fleming</label>
+        </div>
+        <div class="question">
+            <h3>3. What is the main function of DNA?</h3>
+            <label><input type="radio" name="q3" value="A"> Store genetic information</label><br>
+            <label><input type="radio" name="q3" value="B"> Produce energy</label><br>
+            <label><input type="radio" name="q3" value="C"> Transport proteins</label><br>
+            <label><input type="radio" name="q3" value="D"> Digest sugars</label>
+        </div>
+        <button type="submit">Submit Quiz</button>
+    </form>
+</div>
+
+<div id="scoreContainer" style="display:none;">
+    <h2 id="studentName"></h2>
+    <h2>Your Score: <span id="scoreDisplay"></span>/6</h2>
+    <h3 id="feedback"></h3>
+    <button id="backBtn">Back to Notes</button>
+</div>
+
+<script>
+    const quizForm = document.getElementById("quizForm");
+    const scoreContainer = document.getElementById("scoreContainer");
+    const quizFormContainer = document.getElementById("quizFormContainer");
+
+    // Quiz answers
+    const answers = { q1: "B", q2: "A", q3: "A", q4: "B", q5: "C", q6: "C" };
+
+    quizForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        let score = 0;
+        for (let q in answers) {
+            const userAnswer = quizForm.elements[q].value;
+            if (userAnswer === answers[q]) score++;
+        }
+
+        const user = JSON.parse(localStorage.getItem("user"));
+        const studentName = user ? user.name : "Student";
+
+        // Save last score and student
+        localStorage.setItem("lastScore", score);
+        localStorage.setItem("lastStudent", studentName);
+
+        // Hide quiz, show score
+        quizFormContainer.style.display = "none";
+        scoreContainer.style.display = "block";
+
+        document.getElementById("studentName").innerText = `Student: ${studentName}`;
+        document.getElementById("scoreDisplay").innerText = score;
+
+        // Feedback
+        const total = 6;
+        const percent = (score / total) * 100;
+        let feedback = "";
+        if (percent === 100) feedback = "Excellent! 🎉";
+        else if (percent >= 50) feedback = "Good job! 👍";
+        else feedback = "Keep trying! 💪";
+        document.getElementById("feedback").innerText = feedback;
+    });
+
+    // Back button
+    document.getElementById("backBtn").addEventListener("click", () => {
+        quizFormContainer.style.display = "block";
+        scoreContainer.style.display = "none";
+        window.location.href = "life-sciences.html"; // or navigate inside portal
+    });
+</script>

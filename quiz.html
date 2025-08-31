@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Life Sciences Quiz: DNA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="quiz-page">
+    <header class="hero">
+        <h1>Life Sciences Quiz: DNA</h1>
+        <button id="backBtn">Back to Notes</button>
+    </header>
+
+    <main class="quiz-content">
+        <form id="quizForm">
+            <div class="question">
+                <h3>1. Which of the following best describes a DNA molecule?</h3>
+                <label><input type="radio" name="q1" value="A"> Single helix</label>
+                <label><input type="radio" name="q1" value="B"> Double helix</label>
+                <label><input type="radio" name="q1" value="C"> Triple helix</label>
+                <label><input type="radio" name="q1" value="D"> Linear chain</label>
+                <label><input type="radio" name="q1" value="E"> Contains Uracil</label>
+                <label><input type="radio" name="q1" value="D"> Contains Amino acids</label>
+            </div>
+
+            <div class="question">
+                <h3>2. Who are credited with discovering the DNA structure?</h3>
+                <label><input type="radio" name="q2" value="A"> Watson & Crick</label>
+                <label><input type="radio" name="q2" value="B"> Mendel & Darwin</label>
+                <label><input type="radio" name="q2" value="C"> Franklin & Wilkins</label>
+                <label><input type="radio" name="q2" value="D"> Pasteur & Fleming</label>
+            </div>
+
+            <div class="question">
+                <h3>3. What is the main function of DNA?</h3>
+                <label><input type="radio" name="q3" value="A"> Store genetic information</label>
+                <label><input type="radio" name="q3" value="B"> Produce energy</label>
+                <label><input type="radio" name="q3" value="C"> Transport proteins</label>
+                <label><input type="radio" name="q3" value="D"> Digest sugars</label>
+            </div>
+
+            <div class="question">
+                <h3>4. Which sequence of DNA bases would pair with this partial strand ATG TGA CAG</h3>
+                <label><input type="radio" name="q4" value="A"> ATG TGA CAG</label>
+                <label><input type="radio" name="q4" value="B"> TAC ACT GTC</label>
+                <label><input type="radio" name="q4" value="C"> GTA AGT GAC</label>
+                <label><input type="radio" name="q4" value="D"> CAT TCA CTG</label>
+            </div>
+
+            <div class="question">
+                <h3>5. Nitrogeneous bases are joined by which type of bond?</h3>
+                <label><input type="radio" name="q5" value="A"> Polar bonds</label>
+                <label><input type="radio" name="q5" value="B"> Covalent bonds</label>
+                <label><input type="radio" name="q5" value="C"> Weak hydrogen bonds</label>
+                <label><input type="radio" name="q5" value="D"> Ionic bonds</label>
+            </div>
+
+            <div class="question">
+                <h3>6. What sugar is in DNA?</h3>
+                <label><input type="radio" name="q6" value="A"> ribose</label>
+                <label><input type="radio" name="q6" value="B"> deoxyoxe</label>
+                <label><input type="radio" name="q6" value="C"> deoxyribose</label>
+                <label><input type="radio" name="q6" value="D"> oxyribose</label>
+            </div>
+
+
+            <button type="submit">Submit Quiz</button>
+        </form>
+
+        <div id="scoreContainer" style="display:none;">
+            <h2 id="studentName"></h2>
+            <h2>Your Score: <span id="scoreDisplay"></span>/6</h2>
+            <h3 id="feedback"></h3>
+        </div>
+    </main>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
