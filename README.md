@@ -22,6 +22,13 @@ It also provides an interactive **quiz system.**
 ## 🔗 Live Demo
 [🌐 Click here to visit the Student Portal](https://simangaliso24.github.io/Student-Portal/)
 
+<p align="center">
+  <a href="https://simangaliso24.github.io/Student-Portal/" target="_blank">
+    <img src="https://img.shields.io/badge/Visit-Student%20Portal-blue?style=for-the-badge&logo=firefox" alt="Visit Student Portal"/>
+  </a>
+</p>
+
+
 ## 📸 Screenshots
 
 | Login | Signup | Start Quiz |
