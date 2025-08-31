@@ -1,7 +1,7 @@
 # 🎓 Student Portal - Grade 12
 
 The **Student Portal** is a web-based platform designed for Grade 12 science stream learners. 
-It also provides an interactive **quiz system**
+It also provides an interactive **quiz system.**
 
 ## ✨ Features
 - 🔑 **Login system** (simulates two students for now)
