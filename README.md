@@ -19,6 +19,9 @@ It also provides an interactive **quiz system.**
    ```bash
    git clone https://github.com/YOUR-USERNAME/student-portal.git
 
+## 🔗 Live Demo
+[🌐 Click here to visit the Student Portal](https://simangaliso24.github.io/Student-Portal/)
+
 ## 📸 Screenshots
 
 | Login | Signup | Start Quiz |
